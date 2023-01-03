@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="NewsFeed.NewsFeedPage"
+    xmlns:nf="clr-namespace:NewsFeed">
+    <ContentPage.Content>
+        <RefreshView
+            x:Name="scllView"
+            Refreshing="scllView_Refreshing">
+            <CollectionView
+                x:Name="colView"
+                ItemsSource="{Binding Posts}">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout
+                        ItemSpacing="4"
+                        Orientation="Vertical"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <nf:NewsEntryControl />
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </RefreshView>
+    </ContentPage.Content>
+</ContentPage>
+

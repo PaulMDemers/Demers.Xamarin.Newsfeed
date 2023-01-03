@@ -1,0 +1,12 @@
+
+.DS_Store
+
+NewsFeed/NewsFeed/obj/
+
+NewsFeed/.vs/
+
+NewsFeed/NewsFeedDemo/NewsFeedDemo/obj/
+
+NewsFeed/NewsFeedDemo/NewsFeedDemo.Android/obj/
+
+NewsFeed/NewsFeedDemo/NewsFeedDemo.iOS/obj/
